@@ -8,6 +8,7 @@ path3 = "Packets Messenger/APP_WIFI_appel_vocal_Mika_1min_Messenger.pcapng"
 path4 = "Packets Messenger/APP_WIFI_appel_video_Mika_1min_Messenger.pcapng"
 def extract_data_volume(pcap_file, bin_size=1):
     cap = pyshark.FileCapture(pcap_file)
+    
     volume_bins = {}
 
     for packet in cap:
